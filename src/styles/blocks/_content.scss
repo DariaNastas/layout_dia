@@ -1,0 +1,11 @@
+.content {
+  &__wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 148px;
+
+    @include on-mobile {
+      gap: 120px;
+    }
+  }
+}
