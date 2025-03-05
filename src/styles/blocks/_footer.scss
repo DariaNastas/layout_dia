@@ -159,9 +159,11 @@
     height: 32px;
     fill: none;
     display: block;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 
     @include hover {
       transform: scale(1.2);
+      box-shadow: 0 0 10px rgba(32, 96, 246, 0.7); 
     }
 
     &--facebook {
