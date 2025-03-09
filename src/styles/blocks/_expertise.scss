@@ -17,12 +17,10 @@
   &__items {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
     gap: 20px;
 
     @include large-tablet {
       justify-content: center;
-      gap: 60px;
     }
 
     @include on-tablet {
@@ -42,9 +40,7 @@
     gap: 20px;
     text-align: center;
     justify-items: center;
-    transition:
-      transform 0.3s,
-      box-shadow 0.3s ease;
+    transition: transform 0.3s;
 
     @include hover {
       transform: scale(1.1);
@@ -64,7 +60,7 @@
   &__img img {
     width: 166px;
     height: 166px;
-    border-radius: 25px;
+    border-radius: 16px;
   }
 
   &__title {
@@ -72,14 +68,6 @@
     line-height: 1.4;
     text-align: center;
     color: $c-title;
-    border-radius: 25px; 
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    
-    @include hover {
-      transform: scale(1.05);
-      background-color: #f2f6fa;
-      box-shadow: 0 0 15px #abbcce;
-    }
   }
 
   &__text {

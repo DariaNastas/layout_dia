@@ -74,16 +74,88 @@
               </li>
             </ul>
           </nav>
-
+          <button
+            class="button__burger-menu burger-button visible-tablet"
+            type="button"
+            id="show"
+          ></button>
           <a
             class="header__link"
             href="#footer__send-us"
           >
             Hire us
           </a>
+          <span class="visually-covered">Open navigation menu</span>
         </div>
       </div>
     </header>
+
+    <dialog
+      class="tablet-overlay visible-tablet"
+      id="tabletOverlay"
+    >
+      <form
+        class="tablet-overlay__close-button-wrapp"
+        method="dialog"
+      >
+        <a
+          href="#header"
+          class="header__logo logo"
+        >
+          <img
+            class="logo__img"
+            src="./images/logo/Air-logo.svg"
+            alt="Air logo"
+            width="45"
+            height="26"
+            loading="lazy"
+          />
+        </a>
+        <button
+          class="tablet-overlay__close-button cross-button"
+          type="submit"
+          id="close"
+        >
+          <span class="visually-covered">Close navigation menu</span>
+        </button>
+      </form>
+      <div class="tablet-overlay__body">
+        <ul class="tablet-overlay__list">
+          <li class="tablet-overlay__item">
+            <a
+              class="tablet-overlay__link"
+              href="#welcome"
+            >
+              About us
+            </a>
+          </li>
+          <li class="tablet-overlay__item">
+            <a
+              class="tablet-overlay__link"
+              href="#process"
+            >
+              Services
+            </a>
+          </li>
+          <li class="tablet-overlay__item">
+            <a
+              class="tablet-overlay__link"
+              href="#testimonials"
+            >
+              Work
+            </a>
+          </li>
+          <li class="tablet-overlay__item">
+            <a
+              class="tablet-overlay__link"
+              href="#footer__send-us"
+            >
+              Contact Us
+            </a>
+          </li>
+        </ul>
+      </div>
+    </dialog>
 
     <main class="content content__wrap">
       <section
@@ -108,8 +180,8 @@
           <div class="slider">
             <div
               class="slider__image"
-              id="slider__image"              
-            >           
+              id="slider__image"
+            >
               <div class="slider__content">
                 <div class="slider__arrows">
                   <button
@@ -434,7 +506,7 @@
           <div class="container">
             <div class="footer__content">
               <form
-                id="form"
+                id="ContactForm"
                 class="footer__form"
               >
                 <h2 class="footer__title footer__form--title-send-us">
@@ -580,7 +652,7 @@
           </nav>
         </div>
       </div>
-    </footer>    
-    <script src="./js/slider.js"></script>
+    </footer>
+    <script src="./scripts/main.js"></script>
   </body>
 </html>

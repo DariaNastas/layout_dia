@@ -50,6 +50,7 @@
   &__arrow-btn {
     width: 32px;
     height: 32px;
+    border: none;
     border-radius: 50%;
     background-color: $c-fff;
 
@@ -57,13 +58,12 @@
 
     background-repeat: no-repeat;
     background-position: center;
-    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    transition:
+      background-color 0.3s ease,
+      color 0.3s ease;
 
     @include hover {
       transform: scale(1.2);
-      background-color: transparent;
-      color: $c-blue;
-      border-color: $c-blue-hover;
     }
 
     &--left {

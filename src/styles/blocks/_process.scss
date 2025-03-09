@@ -14,7 +14,7 @@
     }
 
     @include tablet-above {
-      grid-template-columns: repeat(6, 68px);
+      grid-template-columns: repeat(6, 58px);
       justify-content: center;
       gap: 30px;
     }
@@ -76,7 +76,6 @@
   &__card {
     border-radius: 16px;
     background-color: $c-fff;
-    box-shadow: 0 9px 18px 0 rgb(53, 48, 208);
     padding: 32px;
     width: 100%;
     height: 264px;
@@ -85,6 +84,7 @@
     @include hover {
       transform: scale(1.1);
       cursor: default;
+      box-shadow: 0 9px 18px 0 $c-blue;
     }
   }
 }

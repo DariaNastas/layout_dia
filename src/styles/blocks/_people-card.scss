@@ -14,7 +14,7 @@
     height: 250px;
     margin-bottom: 24px;
     transition: transform 0.3s ease-in-out;
-    
+
     @include middle-desktop {
       width: 213px;
       height: 200px;
@@ -69,7 +69,7 @@
         height: 109px;
       }
     }
-    
+
     @include hover {
       transform: scale(1.1);
     }
@@ -82,7 +82,7 @@
       width: 139px;
       height: 56px;
       background: #2060f6;
-     
+
       @include middle-desktop {
         width: 130px;
         height: 45px;
