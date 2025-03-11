@@ -2,9 +2,10 @@
   &__body {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    justify-content: space-between;
     gap: 30px;
     padding-top: 148px;
+    max-width: 100%;
+    justify-content: start;
 
     @include mobile-above {
       grid-template-columns: repeat(2, 132px);
@@ -14,7 +15,7 @@
     }
 
     @include tablet-above {
-      grid-template-columns: repeat(6, 58px);
+      grid-template-columns: repeat(6, 68px);
       justify-content: center;
       gap: 30px;
     }
@@ -34,7 +35,7 @@
   &__block {
     align-self: start;
     max-width: 364px;
-    grid-area: 1 / span 4 / 3;
+    grid-area: 1 / span 3 / auto;
 
     @include mobile-above {
       grid-area: 1 / 1 / auto / -1;
