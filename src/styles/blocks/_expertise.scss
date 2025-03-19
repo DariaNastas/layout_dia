@@ -2,7 +2,7 @@
   background-color: $c-fff;
   border-radius: 0 0 30px 30px;
   padding-bottom: 148px;
-
+  
   &__main-title {
     font-size: 52px;
     padding-bottom: 64px;
@@ -18,15 +18,15 @@
     display: flex;
     justify-content: center;
     flex-wrap: nowrap;
-    gap: 177px;
+    gap: clamp(30px, 5vw, 177px);
     padding: 0 227px;
 
     @include small-desktop {
       display: flex;
       flex-wrap: nowrap;
       justify-content: space-between;
-      gap: 107px;
-      padding: 0 54px;
+      // gap: 107px;
+      padding: clamp(16px, 4vw, 54px);
 
       & > * {
         flex: 1 1 33.33%;

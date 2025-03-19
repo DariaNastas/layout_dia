@@ -24,10 +24,6 @@ $on-mobile: 320px;
   }
 }
 
-@media (min-width: $small-desktop-above) {
-  @content;
-}
-
 @mixin small-desktop {
   @media (max-width: $small-desktop) {
     @content;
