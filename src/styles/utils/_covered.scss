@@ -18,8 +18,8 @@
 }
 
 .visible-tablet {
-  @include tablet-above {
-    display: none !important;
+  @include small-desktop {
+    display: none;
   }
 }
 

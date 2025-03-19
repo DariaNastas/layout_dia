@@ -1,4 +1,10 @@
 .burger-button {
+  display: none;
+
+  @include on-tablet {
+    display: block;
+  }
+
   @include reset-button;
   @include square(36px);
 

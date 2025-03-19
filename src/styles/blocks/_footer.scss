@@ -20,7 +20,7 @@
     display: flex;
     margin-top: 180px;
 
-    @include large-tablet {
+    @include on-tablet {
       flex-wrap: wrap;
       row-gap: 120px;
     }

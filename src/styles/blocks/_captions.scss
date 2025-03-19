@@ -18,10 +18,6 @@
   &__info-wrap {
     max-width: 487px;
 
-    @include large-tablet {
-      width: 50%;
-    }
-
     @include on-tablet {
       width: 100%;
       max-width: 490px;

@@ -3,8 +3,12 @@
   @include square(36px);
 
   background-color: $c-dark;
-
-  position: relative;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   @include hover {
     background-color: $c-fff;
@@ -20,19 +24,17 @@
   &::after {
     content: '';
     position: absolute;
-    width: 50%;
+    width: 18px;
     height: 2px;
-    top: 47%;
-    left: 9px;
     background-color: $c-fff;
     border-radius: 4px;
   }
 
   &::before {
-    rotate: 45deg;
+    transform: rotate(45deg);
   }
 
   &::after {
-    rotate: -45deg;
+    transform: rotate(-45deg);
   }
 }

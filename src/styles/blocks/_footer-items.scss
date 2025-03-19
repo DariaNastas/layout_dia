@@ -18,14 +18,9 @@
 
   &__list {
     display: flex;
-    gap: 64px;
+    gap: clamp(24px, 5vw, 64px);
 
-    @include large-tablet {
-      gap: 45px;
-    }
-
-    @include on-tablet {
-      gap: 24px;
+    @include on-mobile {
       flex-direction: column;
     }
   }

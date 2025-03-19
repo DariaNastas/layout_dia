@@ -17,22 +17,36 @@
   &__items {
     display: flex;
     justify-content: center;
-    gap: 107px;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    gap: 177px;
+    padding: 0 227px;
 
-    @include large-tablet {
-      justify-content: center;
-      gap: 60px;
+    @include small-desktop {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      gap: 107px;
+      padding: 0 54px;
+
+      & > * {
+        flex: 1 1 33.33%;
+      }
     }
 
     @include on-tablet {
       flex-direction: column;
       gap: 72px;
+      padding: 0 clamp(20px, 5vw, 139px);
+      justify-content: center;
+      align-items: center;
     }
 
     @include on-mobile {
       flex-direction: column;
       gap: 56px;
+      padding: 0 20px;
+      justify-content: center;
+      align-items: center;
     }
   }
 
