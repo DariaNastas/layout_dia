@@ -3,9 +3,9 @@
     max-width: 190px;
     margin-bottom: 85px;
 
-    /*@include on-tablet {
+    /* @include on-tablet {
       margin-bottom: 56px;
-    }*/
+    } */
 
     @include on-mobile {
       max-width: 280px;
@@ -53,13 +53,12 @@
 
   &__card {
     display: grid;
-    //padding: 32px 56px;
     border-radius: 16px;
     gap: 16px;
     
 
    /* width: 362px;
-    height: 494px;*/
+    height: 494px; */
 
     background: $c-fff;
     box-shadow: 0 9px 18px 0 rgba(37, 41, 49, 0.03);
@@ -70,10 +69,10 @@
       cursor: default;
     }
 
-    /*@include middle-desktop {
+    /* @include middle-desktop {
       width: 346px;
       padding: 32px 48px;
-    }*/
+    } */
 
     @include small-desktop {
       width: 292px;
@@ -84,11 +83,10 @@
       max-width: 558px;
       height: 478px;
       width: 100%;
-      ///padding: 32px 42px;
     }
 
     @media (max-width: 375px) {
-      //padding: 32px 37px;
+      // padding: 32px 37px;
       height: 456px;
     }
   }
