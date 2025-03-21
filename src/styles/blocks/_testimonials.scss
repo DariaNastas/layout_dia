@@ -3,9 +3,9 @@
     max-width: 190px;
     margin-bottom: 85px;
 
-    /* @include on-tablet {
+    @include on-tablet {
       margin-bottom: 56px;
-    } */
+    }
 
     @include on-mobile {
       max-width: 280px;
@@ -27,67 +27,67 @@
 
   &__cards {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     gap: 30px;
 
-
-    @include on-desktop {
-      gap: 30px;
-    }
-   
     @include middle-desktop {
-      gap: 10px;
-    }
-
-    @media (max-width: 973px) {
-      flex-wrap: nowrap;
-      justify-content: center;
-    }
-
-    @include on-tablet {
-      flex-direction: column;
       gap: 20px;
+    }
+
+    /*@media (max-width: 973px) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }*/
+
+    @include small-desktop-less {
+      flex-direction: column;
+      gap: 30px;
     }
   }
 
   &__card {
     display: grid;
+    padding: 32px 56px;
     border-radius: 16px;
     gap: 16px;
-    
-
-   /* width: 362px;
-    height: 494px; */
-
+    width: 362px;
+    height: 494px;
     background: $c-fff;
     box-shadow: 0 9px 18px 0 rgba(37, 41, 49, 0.03);
     transition: transform 0.3s;
 
-    @include hover {
+   @include hover {
       transform: scale(1.1);
       cursor: default;
     }
 
-    /* @include middle-desktop {
+    @include middle-desktop {
       width: 346px;
       padding: 32px 48px;
-    } */
+    }
 
-    @include small-desktop {
+    /*@include small-desktop {
       width: 292px;
       height: 456px;
-    }
+    }*/
 
-    @include on-tablet {
+    @include small-desktop-less {
       max-width: 558px;
-      height: 478px;
+      height: 456px;
       width: 100%;
+      padding: 32px 42px;
     }
 
-    @media (max-width: 375px) {
-      // padding: 32px 37px;
-      height: 456px;
+    @include on-tablet-less {
+      max-width: 478px;
+      height: 478px;
+      padding: 32px 42px;
     }
+
+   /* @media (max-width: 375px) {
+      padding: 32px 37px;
+      height: 456px;
+    }*/
   }
 }

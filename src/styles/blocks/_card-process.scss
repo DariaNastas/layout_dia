@@ -1,72 +1,66 @@
 .card-process {
   &--1 {
-    grid-area: 1 / 7 / auto / 10;
-
-    @include on-tablet {
-      grid-area: 2 / 1 / auto / -1;
-    }
-
-    @include small-desktop {
-      grid-area: 2 / span 3;
-    }
-
     @include large {
       grid-area: 1 / 7 / auto / 10;
     }
+    
+    @include small-desktop-less {
+      grid-area: 2 / span 5;
+    }
+
+    @include on-tablet-less {
+      grid-area: 2 / 1 / auto / -1;
+    }    
   }
 
   &--2 {
     grid-area: 1 / 10 / auto / -1;
-    margin-top: -132px;
-
-    @include on-tablet {
-      grid-area: 3 / 1 / auto / -1;
-      margin-top: 0;
-    }
-
-    @include small-desktop {
-      grid-area: 2 / span 3;
-      margin-top: -132px;
-    }
+    margin-top: -90px;
 
     @include large {
       grid-area: 1 / 10 / auto / -1;
     }
+
+    @include small-desktop-less {
+      grid-area: 2 / span 5;
+    }
+
+    @include on-tablet-less {
+      grid-area: 3 / 1 / auto / -1;
+      margin-top: 0;
+    }    
   }
 
   &--3 {
-    grid-area: 2 / 7 / auto / 10;
-
-    @include on-tablet {
-      grid-area: 4 / 1 / auto / -1;
-    }
-
-    @include small-desktop {
-      grid-area: 3 / span 3;
-    }
-
     @include large {
       grid-area: 2 / 7 / auto / 10;
     }
+
+    @include small-desktop-less {
+      grid-area: 3 / span 5;
+    }
+
+    @include on-tablet-less {
+      grid-area: 4 / 1 / auto / -1;
+    }    
   }
 
   &--4 {
-    grid-area: 2 / 10 / auto / -1;
-    margin-top: -132px;
-
-    @include on-tablet {
-      grid-area: 5 / 1 / auto / -1;
-      margin-top: 0;
-    }
-
-    @include small-desktop {
-      grid-area: 3 / span 3;
-      margin-top: -132px;
-    }
+    margin-top: -90px;
 
     @include large {
       grid-area: 2 / 10 / auto / -1;
     }
+
+    @include small-desktop-less {
+      grid-area: 3 / span 5;
+      margin-top: -90px;
+    }
+
+    @include on-tablet-less {
+      grid-area: 5 / 1 / auto / -1;
+      margin-top: 0;
+    }    
   }
 
   &__content {
@@ -99,7 +93,7 @@
     height: 80px;
     font-family: $ff-openSans;
     color: $c-text;
-    margin-bottom: 32px;
+    margin: 45px 0;
   }
 
   &__button-link {

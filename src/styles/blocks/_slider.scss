@@ -9,9 +9,14 @@
     right: 0;
     bottom: 0;
 
-    @include tablet-above {
+    @include large {
       width: 50%;
       height: 100%;
+    }
+
+    @include small-desktop-less {
+      width: 100%;
+      height: 50%;
     }
   }
 

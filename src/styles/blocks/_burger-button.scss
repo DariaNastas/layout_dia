@@ -1,7 +1,7 @@
 .burger-button {
   display: none;
 
-  @include on-tablet {
+  @include small-desktop-less {
     display: block;
   }
 
@@ -9,7 +9,7 @@
   @include square(36px);
 
   margin-right: auto;
-
+  margin-left: 32px;
   background-color: $c-dark;
 
   position: relative;

@@ -12,7 +12,7 @@
 }
 
 .covered-tablet {
-  @include on-tablet {
+  @include small-desktop-less {
     display: none !important;
   }
 }

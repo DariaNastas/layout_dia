@@ -8,24 +8,25 @@
     width: 100%;
     justify-content: start;
     padding-block: 12rem;
-
+    
     @include large {
-      grid-template-columns: repeat(12, 58px);
-      gap: 20px;
+      grid-template-columns: repeat(12, 62px);
+      gap: 50px 20px;
       padding-top: 148px;
-      justify-content: center;
+      justify-content: space-between;
     }
 
-   @include small-desktop {
+    @include small-desktop-less {
       grid-template-columns: repeat(6, 48px);
       gap: 10px;
       padding-top: 148px;
       justify-content: center;
+      gap: 40px 10px;
     }
 
-    @include on-tablet {
+    @include on-tablet-less {
       grid-template-columns: repeat(2, 132px);
-      justify-content: center;
+      gap: 24px 0;
       padding-top: 0;
     }
   }
@@ -33,20 +34,18 @@
   &__block {
     align-self: start;
     max-width: 364px;
-    grid-area: 1 / span 6 / auto;
 
-    @include on-mobile {
-      grid-area: 1 / 1 / auto / -1;
-      align-self: start;
+    @include large {
+      grid-area: 1 / span 6 / auto;
     }
 
-    @include on-tablet {
-      grid-area: 1 / span 3;
+    @include small-desktop-less {
+      grid-area: 1 / span 5 / auto;
+      padding: 0 10px 20px 0px;
     }
 
-    @include small-desktop {
-      grid-area: 1 / span 4 / 3;
-      align-self: start;
+    @include on-tablet-less {
+      grid-area: 1 / span 2 / auto;
     }
   }
 
@@ -63,20 +62,6 @@
     font-size: 32px;
     line-height: 1.3;
     text-align: left;
-
-    @include on-mobile {
-      grid-area: 1 / 1 / auto / -1;
-      align-self: start;
-    }
-
-    @include on-tablet {
-      grid-area: 1 / span 3;
-    }
-
-    @include small-desktop {
-      grid-area: 1 / span 4 / 3;
-      align-self: start;
-    }
   }
 
   &__text {
@@ -90,9 +75,20 @@
     border-radius: 16px;
     background-color: $c-fff;
     padding: 20px;
-    width: 100%;
-    height: 264px;
+    width: 244px;
+    height: 274px;
     transition: transform 0.3s;
+
+
+    @include large {
+      width: 204px;
+      height: 274px;
+    }
+
+    @include small-desktop-less {
+      width: 244px;
+      height: 274px;
+    }
 
     @include hover {
       transform: scale(1.1);

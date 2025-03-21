@@ -4,15 +4,11 @@
   border-radius: 30px 30px 0 0;
   padding-bottom: 120px;
 
-  @include small-desktop {
-    padding-bottom: 104px;
-  }
-
-  @include on-tablet {
+  @include small-desktop-less {
     padding-bottom: 139px;
   }
 
-  @include on-mobile {
+  @include on-tablet-less {
     padding-bottom: 80px;
   }
 
@@ -20,7 +16,7 @@
     display: flex;
     margin-top: 180px;
 
-    @include on-tablet {
+    @include small-desktop-less {
       flex-wrap: wrap;
       row-gap: 120px;
     }
@@ -34,12 +30,12 @@
       margin-right: 98px;
     }
 
-    @include on-tablet {
-      margin-right: 0;
+    @include small-desktop-less {
+      margin-right: 98px;
     }
 
     &--title-send-us {
-      @include on-mobile {
+      @include on-tablet-less {
         line-height: 1.3;
       }
     }
@@ -108,7 +104,7 @@
     color: $c-fff;
     padding-inline: 114px;
 
-    @include on-mobile {
+    @include on-tablet-less {
       width: 100%;
     }
   }

@@ -7,7 +7,7 @@
     min-height: 80px;
     align-items: center;
 
-    @include on-tablet {
+    @include small-desktop-less {
       justify-content: start;
     }
   }

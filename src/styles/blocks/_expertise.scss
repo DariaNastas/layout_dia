@@ -2,7 +2,7 @@
   background-color: $c-fff;
   border-radius: 0 0 30px 30px;
   padding-bottom: 148px;
-  
+
   &__main-title {
     font-size: 52px;
     padding-bottom: 64px;
@@ -17,30 +17,9 @@
   &__items {
     display: flex;
     justify-content: center;
-    flex-wrap: nowrap;
-    gap: clamp(30px, 5vw, 177px);
-    padding: 0 227px;
+    margin: 0 54px;    
 
-    @include small-desktop {
-      display: flex;
-      flex-wrap: nowrap;
-      justify-content: space-between;
-      padding: clamp(16px, 4vw, 54px);
-
-      & > * {
-        flex: 1 1 33.33%;
-      }
-    }
-
-    @include on-tablet {
-      flex-direction: column;
-      gap: 72px;
-      padding: 0 clamp(20px, 5vw, 139px);
-      justify-content: center;
-      align-items: center;
-    }
-
-    @include on-mobile {
+    @include small-desktop-less {
       flex-direction: column;
       gap: 56px;
       padding: 0 20px;
@@ -65,6 +44,25 @@
       flex-grow: 1;
     }
   }
+
+  &__item--communication {
+    flex: 0 1 265px;
+    display: grid;
+    gap: 20px;
+    text-align: center;
+    justify-items: center;
+    transition: transform 0.3s;
+    margin: 0 127px;
+
+    @include hover {
+      transform: scale(1.1);
+    }
+
+    @include on-tablet {
+      flex-grow: 1;
+    }
+  }
+
 
   &__img {
     display: flex;
