@@ -9,7 +9,7 @@
     flex-wrap: wrap;
     gap: 20px;
 
-    @include on-tablet {
+    @include on-tablet-less {
       gap: 48px;
       align-items: flex-start;
       flex-direction: column;
@@ -20,7 +20,7 @@
     display: flex;
     gap: clamp(24px, 5vw, 64px);
 
-    @include on-mobile {
+    @include on-tablet-less {
       flex-direction: column;
     }
   }
